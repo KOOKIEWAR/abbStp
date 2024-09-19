@@ -46,20 +46,22 @@
             span{
                 width: 20px;
                 height: 20px;
-                font-size: 8px;
+                font-size: 3.25px;
                 color:black;
                 display: block;
             }
 
             .name{
-                position: relative;
-                top: 142px;
-                margin-left: 95px;
+                position: fixed;
+                top: 10.4%;
+                left: 29%;
+                margin: 0px;
             }
             .surname{
-                position: relative;
-                top: 132px;
-                margin-left: 95px;
+                position: fixed;
+                top: 11%;
+                left: 29%;
+                margin: 0px;
             }
         }
     </style>
@@ -71,14 +73,14 @@
     </div>
 
     <script>
-        // document.getElementsByTagName("body").onload = input();
+        document.getElementsByTagName("body").onload = input();
 
-        // function input(){
-        //     let name = prompt("Insert your name", "");
-        //     let surname = prompt("Insert your surname", "");
-        //     document.getElementById("name").innerHTML = name;
-        //     document.getElementById("surname").innerHTML = surname;
-        // }
+        function input(){
+            let name = prompt("Insert your name", "");
+            let surname = prompt("Insert your surname", "");
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("surname").innerHTML = surname;
+        }
     </script>
 </body>
 </html>
