@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbonamento STP</title>
+    <style>
+        body{
+            background-color: rgb(42, 42, 46);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .abb{
+            width: 1020px;
+            height: 1320px;
+            background-image: url("abb.jpg");
+            background-size: contain;
+            margin: auto;
+        }
+
+        span{
+            width: 20px;
+            height: 20px;
+            font-size: 21px;
+            color:black;
+            display: block;
+        }
+
+        .name{
+            position: relative;
+            top: 379px;
+            margin-left: 250px;
+        }
+        .surname{
+            position: relative;
+            top: 385px;
+            margin-left: 250px;
+        }
+        @media only screen and (max-width: 991px) {/*phones, potrait tablets, large phones, landscape tablets*/
+            .abb{
+                width: 90%;
+                height: 500px;
+            }
+
+            span{
+                width: 20px;
+                height: 20px;
+                font-size: 9px;
+                color:black;
+                display: block;
+            }
+
+            .name{
+                position: relative;
+                top: 143px;
+                margin-left: 95px;
+            }
+            .surname{
+                position: relative;
+                top: 133px;
+                margin-left: 95px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="abb" id="abb">
+        <span class="name" id="name">Francesco</span>
+        <span class="surname" id="surname">Zaccheo</span>
+    </div>
+
+    <script>
+        // document.getElementsByTagName("body").onload = input();
+
+        // function input(){
+        //     let name = prompt("Insert your name", "");
+        //     let surname = prompt("Insert your surname", "");
+        //     document.getElementById("name").innerHTML = name;
+        //     document.getElementById("surname").innerHTML = surname;
+        // }
+    </script>
+</body>
+</html>
