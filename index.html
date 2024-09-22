@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abbonamento STP</title>
+    <title>biglietto.pdf</title>
     <style>
+    
         body{
             background-color: rgb(42, 42, 46);
             font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +19,7 @@
             margin: auto;
             background-repeat: no-repeat;
         }
-
+/*
         span{
             width: 20px;
             height: 20px;
@@ -37,7 +38,7 @@
             top: 385px;
             margin-left: 250px;
         }
-        @media only screen and (max-width: 991px) {/*phones, potrait tablets, large phones, landscape tablets*/
+        @media only screen and (max-width: 991px) {/*phones, potrait tablets, large phones, landscape tablets *
             .abb{
                 width: 90%;
                 height: 500px;
@@ -45,42 +46,52 @@
 
             span{
                 width: 20px;
-                height: 20px;
+                height: 5px;
                 font-size: 3.25px;
                 color:black;
                 display: block;
             }
 
             .name{
-                position: fixed;
+                /* position: relative;
                 top: 10.4%;
                 left: 29%;
-                margin: 0px;
+                margin: 0px; *
+                left: 24.51%;
+  top: 29.09%;
+  font-size: calc(var(--scale-factor)*13.00px);
+  font-family: sans-serif;
+  transform: scaleX(0.995734);
             }
             .surname{
-                position: fixed;
+                position: relative;
                 top: 11%;
                 left: 29%;
                 margin: 0px;
             }
-        }
+        }*/
     </style>
 </head>
 <body>
     <div class="abb" id="abb">
-        <span class="name" id="name">Francesco</span>
-        <span class="surname" id="surname">Zaccheo</span>
+        <!-- <span class="name" id="name">Francesco</span>
+        <span class="surname" id="surname">Zaccheo</span> -->
     </div>
 
     <script>
-        document.getElementsByTagName("body").onload = input();
+        // const body = document.getElementsByTagName("body").onload = input();
 
-        function input(){
-            let name = prompt("Insert your name", "");
-            let surname = prompt("Insert your surname", "");
-            document.getElementById("name").innerHTML = name;
-            document.getElementById("surname").innerHTML = surname;
-        }
+        // // function input(){
+        // //     let name = prompt("Insert your name", "");
+        // //     let surname = prompt("Insert your surname", "");
+        // //     document.getElementById("name").innerHTML = name;
+        // //     document.getElementById("surname").innerHTML = surname;
+        // // }
+
+        // let scale;
+        // if (body.style.width <= 350+"px") scale = 0.5065359477124183 + "px";
+        // else if (body.style.width >= 1060+"px") scale = 1.6666666666666665 + "px";
+        // else if (body.style.width > 350+"px" && body.style.width < 1060+"px") scale =  + "px";//troca il calcolo
     </script>
 </body>
 </html>
